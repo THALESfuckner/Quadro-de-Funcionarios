@@ -1,0 +1,19 @@
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #F2F9F1;
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+}
+
+
+.login{
+background-color: #B6CDBD; 
+   display: block;
+}
+
+.index {
+    background-color: #B6CDBD;
+}
