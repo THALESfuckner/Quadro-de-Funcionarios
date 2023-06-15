@@ -1,91 +1,78 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  :root {
-  --primary-color: #D96AA7;
-  --secondary-color: #422C73;
-  --complimentary-color: #88BFB5;
-  --contrast-color: #F2E527;
-  --light-color: #D2A9D9;
-  }
-  
-  .container {
-    background: #191919;
-    min-height: 100vh;
-    font-family: Montserrat, sans-serif;
-  }
-  
-  nav a {
-      font-size: 40px;
-      color: #fff;
-      text-decoration: none;
-      padding: 20px;
-      text-align: center;
-  }
-  
-  nav {
-      position: fixed;
-      left: 0;
-      z-index: 50;
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      height: 100vh;
-      background: var(--secondary-color);
-  }
-  
-  section {
-      position: absolute;
-      top: 0;
-      height: 100vh;
-      width: 0;
-      opacity: 0;
-      transition: all ease-in .5s;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  } 
-  
-  section h1 {
-      color: #fff;
-      font-size: 50px;
-      text-transform: uppercase;
-      opacity: 0;
-  }
-  
-  /* Styles applied on trigger */
-  section:target {
-      opacity: 1;
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 10;
-  }
-  
-  section:target h1 {
-      opacity: 0;
-      animation: 2s fadeIn forwards .5s;
-  }
-  
-  #first {
-    background:var(--primary-color);
-  }
-  #second {
-      background: var(--complimentary-color);
-  }
-  
-  #third {
-      background: var(--contrast-color);
-  }
-  
-  #fourth {
-      background: var(--light-color);
-  }
-  
-  @keyframes fadeIn {
-      100% { opacity:1 }
-  }
+    font-family: 'Manrope', sans-serif;
+    
+}
+
+body{
+    height: 900vh;
+    background-color: #B6CDBD;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #F2F9F1;
+    padding: 40px 0px 40px 1%;
+    /*box-shadow: 1px 0 0 #B6CDBD;*/
+    border-radius: 10px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+nav.menu-lateral:hover{
+    width: 300px;
+    transition: .2s;
+}
+
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #5C715E;
+    font-size: 24px;
+    cursor: pointer;
+} 
+
+ul{
+   height: 100%;
+   list-style-type: none; 
+}
+
+ul li.item-menu a{
+    color: #5C715E;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu:hover{
+    background: #B6CDBD;
+}
+ul li.item-menu{
+    transition: 0.3s;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 30px;;
+}
+
+ul li.item-menu a .icon{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
