@@ -1,5 +1,4 @@
 
-//Seleciona os itens clicado
 var menuItem = document.querySelectorAll('.item-menu')
 
 function selectLink(){
