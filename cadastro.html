@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/Estilos/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <form method="POST" action="cadastro.php">
-        <div class="cadastro">
-        <p>
-        
-            <label>Nome:</label>
-            <input type="text" name="Nome" value="100">
-            <label>Sobrenome:</label>
-            <input type="text" name="Sobrenome" value="100">
-            <label>E-mail:</label>
-            <input type="text" name="Email" value="100">
-            <label>CPF:</label>
-            <input type="text" name="CPF" value="11">
-            <label>Setor</label>
-            <input type="text" name="Setor" value="100"> <!-- setor onde trabalha  input type -->
-            <label>Tipo</label>
-            <input type="text" name="Tipo" value="100"> <!-- Forma da contratacao  -->
+        <div class="ccad">
+            <div class="cadastro"> 
+                <h1>Novo Cadastro</h1>
+            <label>Nome:</label> <br>
+            <input type="text" name="Nome" placeholder="Nome"> <br>
+            <label>Sobrenome:</label> <br>
+            <input type="text" name="Sobrenome" placeholder="Sobrenome"><br>
+            <label>E-mail:</label> <br>
+            <input type="text" name="Email" placeholder="E-mail"> <br>
+            <label>CPF:</label> <br>
+            <input type="text" name="CPF" placeholder="CPF"> <br>
+            <label>Setor</label> <br>
+            <select name="setores" id="setores">
+                <option value="">Selecione aqui</option>
+                <option value="Administrativo">Administrativo</option>
+                <option value="Financeiro">Financeiro</option>
+                <option value="RH">RH</option>
+                <option value="Comercial">Comercial</option>
+                <option value="Operacional">Operacional</option>
+            </select><br><!-- setor onde trabalha  input type -->
+           <!-- <label>Tipo</label> <br>
+            <input type="text" name="Tipo" > <br><br> 
+            Forma da contratacao  -->
             <input type="submit" value="Enviar">
-    </p>
+            </div>
+        </div>
     </form>
-</div>
 </body>
 </html>
