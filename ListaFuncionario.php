@@ -11,7 +11,7 @@ $query->execute();?>
 
 <a href="./cadastro.html">Insere Funcionario.</a>
  <table>
-    <tr>
+ <tr>
         <td>Nome</td>
         <td>Sobrenome</td>
         <td>CPF</td>
@@ -27,6 +27,7 @@ $query->execute();?>
                     <td>'.$linha['CPF'].'</td><td>'.$linha['Email'].'</td>
                     <td>'.$linha['Setor'].'</td><td>'.$linha['Tipo'].'</td>
 
-                </tr>';}?>
+                </tr>';}
+    ?>
                 
  </table>
