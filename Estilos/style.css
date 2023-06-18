@@ -9,7 +9,7 @@
 }
 
 body{
-    height: 900vh;
+    height: 200vh;
     background-color: #B6CDBD;
 }
 
@@ -102,10 +102,11 @@ ul li.item-menu a .icon > i{
 }
 
 .container img{
-    position: absolute;
+    position: fixed;
     width: 200px;
     right: 20px;
     top: 20px;
+
 }
 
 .clog{
@@ -191,3 +192,6 @@ ul li.item-menu a .icon > i{
 }
 
 
+.content{
+    font-size: 20px;
+}
