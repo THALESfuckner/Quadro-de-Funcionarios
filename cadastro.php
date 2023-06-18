@@ -7,17 +7,17 @@ $db_senha = '';
 $conexao = new PDO("mysql:host=$db_host;dbname=$db_name;charset=utf8", $db_user, $db_senha);
 
 
-$nome = $_POST['Nome']; 
-$sobrenome = $_POST['Sobrenome'];
-$cpf = $_POST['CPF'];
-$setor = $_POST['Setor'];
-$tipo = $_POST['Tipo'];
-$email = $_POST['Email'];
+$Nome = $_POST['Nome']; 
+$Sobrenome = $_POST['Sobrenome'];
+$CPF = $_POST['CPF'];
+$Setor = $_POST['Setor'];
+$Tipo = $_POST['Tipo'];
+$Email = $_POST['Email'];
 
     
    
 
-    $query = $conexao->prepare('INSERT INTO Cadastro (  Nome,
+    $query = $conexao->prepare('INSERT INTO Cadastrofunc (  Nome,
                                                         Sobrenome, 
                                                         CPF, 
                                                         Setor, 
@@ -31,12 +31,12 @@ $email = $_POST['Email'];
 
     $query->bindValue(':descricao', $descricao);
 
-    $query->bindValue(':Nome', $nome);
-    $query->bindValue(':Sobrenome', $sobrenome);
-    $query->bindValue(':CPF', $cpf);
-    $query->bindValue(':Setor', $setor);
-    $query->bindValue(':Tipo', $tipo);
-    $query->bindValue(':Email', $email);
+    $query->bindValue(':Nome', $Nome);
+    $query->bindValue(':Sobrenome', $Sobrenome);
+    $query->bindValue(':CPF', $CPF);
+    $query->bindValue(':Setor', $Setor);
+    $query->bindValue(':Tipo', $Tipo);
+    $query->bindValue(':Email', $Email);
 
   
     
