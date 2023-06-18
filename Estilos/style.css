@@ -149,9 +149,10 @@ ul li.item-menu a .icon > i{
     cursor: pointer;
   }
   
-  .login  ::placeholder{
+  .login  ::placeholder {
     font-size: 15px;
   }
+ 
 
   .ccad{
     margin: 1%;

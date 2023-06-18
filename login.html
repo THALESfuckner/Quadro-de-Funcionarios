@@ -9,15 +9,17 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
+  <form action="dados.html">
     <div class="clog">
         <div class="login">
           <h1>Login</h1> <br>
           <label for="user">Usuário</label> <br>
           <input type="text" id="fuser" name="fuser" placeholder="Usuário"><br>
           <label for="password">Senha</label> <br> 
-          <input type="text" id="password" name="password" placeholder="Senha"> <br><br>
-          <button type="submit" value="Enviar">Enviar</button>
+          <input type="password" id="pass" name="password" minlength="8" required placeholder="Senha"> <br><br>
+          <button type="submit" value="Sing in">Enviar</button>
         </div>
       </div>
+    </form>
 </body>
 </html>
