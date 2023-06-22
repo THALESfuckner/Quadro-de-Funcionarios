@@ -1,6 +1,6 @@
 <?php
 $db_host = 'localhost';
-$db_name = 'CadastroFuncionario';
+$db_name = 'DevWebS';
 $db_user = 'root';
 $db_senha = '';
 
@@ -11,21 +11,23 @@ $query->execute();?>
 
 <a href="./cadastro.html">Insere Funcionario.</a>
  <table>
- <tr>
+    <tr>
+        <td>CPF</td>
         <td>Nome</td>
         <td>Sobrenome</td>
-        <td>CPF</td>
-        <td>Setor</td>
-        <td>Tipo</td>
         <td>Email</td>
+        <td>Setor</td>
+        <td></td>
     </tr> 
     <?php
     while($linha=$query->fetch(PDO::FETCH_ASSOC)){
 
         echo'   <tr>
-                    <td>'.$linha['Nome'].'</td><td>'.$linha['Sobrenome'].'</td>
-                    <td>'.$linha['CPF'].'</td><td>'.$linha['Email'].'</td>
-                    <td>'.$linha['Setor'].'</td><td>'.$linha['Tipo'].'</td>
+                    <td>'.$linha['CPF'].'</td>
+                    <td>'.$linha['Nome'].'</td>
+                    <td>'.$linha['Sobrenome'].'</td>
+                    <td>'.$linha['Email'].'</td>
+                    <td>'.$linha['Setor'].'</td>
 
                 </tr>';}
     ?>
